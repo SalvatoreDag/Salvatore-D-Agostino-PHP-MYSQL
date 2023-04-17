@@ -1,7 +1,5 @@
 <?php
-
-//Grazie a PDO posso configurare il mio programma per essere compatibile con diversi database.
-//qui sto configurando la compatibilità a database diversi rendendo dinamica la string dsn
+//file per la configurazione di diversi database
 
 namespace App\DB;
 use App\DB\DbPdo;

@@ -1,4 +1,5 @@
 <?php
+//file che contiene le query per la table services_provided
 
 namespace App\Models;
 

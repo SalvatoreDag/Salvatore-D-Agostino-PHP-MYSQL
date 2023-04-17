@@ -1,5 +1,5 @@
 <?php
-
+//file per la gestione degli status code di risposta
 namespace App\Models;
 
 class Response

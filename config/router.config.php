@@ -1,31 +1,31 @@
 <?php
 //file per la configurazione delle rotte
-use App\Controllers\ServicesController;
+use App\Controllers\OfferedController;
 use App\Controllers\ProvidedController;
 
 
 return [
     'routes' => [
         'GET' => [
-            '/' => [ServicesController::class, 'getServices'],
-            'services' => [ServicesController::class, 'getServices'],
-            'services/:id' => [ServicesController::class, 'getServicesById'],
+            '/' => [OfferedController::class, 'getServices'],
+            'services' => [OfferedController::class, 'getServices'],
+            'services/:id' => [OfferedController::class, 'getServices'],
             'provided' => [ProvidedController::class, 'getProvided'],
             'provided/:id' => [ProvidedController::class, 'getProvidedById'],
-            'saved' => [ServicesController::class, 'timeSaved'],
-            'date/:initialDate/:finalDate' => [ServicesController::class, 'filterByDate'],
-            'typology/:type' => [ServicesController::class, 'filterByType'],
+            'saved' => [OfferedController::class, 'timeSaved'],
+            'date/:initialDate/:finalDate' => [OfferedController::class, 'filterByDate'],
+            'typology/:type' => [OfferedController::class, 'filterByType'],
         ],
         'POST' => [
-            'services' => [ServicesController::class, 'save'],
+            'services' => [OfferedController::class, 'save'],
             'provided' => [ProvidedController::class, 'save'],
         ],
         'PUT' => [
-            'services/:id' => [ServicesController::class, 'save'],
+            'services/:id' => [OfferedController::class, 'save'],
             'provided/:id' => [ProvidedController::class, 'save'],
         ],
         'DELETE' => [
-            'services/:id/delete' => [ServicesController::class, 'delete'],
+            'services/:id/delete' => [OfferedController::class, 'delete'],
             'provided/:id/delete' => [ProvidedController::class, 'delete'],
         ]
     ]
