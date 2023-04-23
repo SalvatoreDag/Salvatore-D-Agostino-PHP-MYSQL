@@ -87,6 +87,8 @@
 
 ### Sviluppato Con
 
+* [![PHP][PHP]][PHP-url]
+* [![MYSQL][MYSQL]][MYSQL-url]
 * <a href="https://www.php.net/">PHP</a>
 * <a href="https://www.mysql.com/">MY SQL</a>
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -166,3 +168,7 @@ Salvatore D'Agostino - salvatore.dagostino.work@gmail.com
 [issues-url]:https://github.com/SalvatoreDag/Salvatore-D-Agostino-PHP-MYSQL/issues
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/salvatore-d-agostino/
+[PHP]: https://img.shields.io/badge/php-8993be?style=for-the-badge&logo=php&logoColor=white
+[PHP-url]: https://www.php.net/
+[MYSQL]: https://img.shields.io/badge/mysql-00758F?style=for-the-badge&logo=mysql&logoColor=white
+[MYSQL-url]: https://www.mysql.com/
