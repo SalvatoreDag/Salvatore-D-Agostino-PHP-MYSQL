@@ -122,7 +122,7 @@ risparmiato dai cittadini e di filtrare per data e prestazione.
 1. Per leggere il tempo totale risparmiato usare il metodo GET e inserire http://php-mysql.test/saved
 2. Per filtrare le prestazioni in base alla data usare il metodo GET e inserire http://php-mysql.test/date/:initialDate/:finalDate
 3. Per filtrare una prestazione in base alla tipologia usare il metodo GET e inserire http://php-mysql.test/typology/:type
-<strong> (se la tipologia di prestazione contiene più parole dividerle usanto "-" Esempio: water-bonus)</strong>
+<strong> (se la tipologia di prestazione contiene più parole dividerle usando "-" Esempio: water-bonus)</strong>
 
 ### Installazione
 
