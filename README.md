@@ -114,11 +114,12 @@ risparmiato dai cittadini e di filtrare per data e prestazione.
 4. Per modificare una prestazione erogata usare il medoto PUT e inserire http://php-mysql.test/provided/{id}
 5. Per eliminare una prestazione erogata usare il metodo DELETE e inserire http://php-mysql.test/provided/{id}/delete
 
-### Prestazioni erogate
+### Tempo Rispamiato
 
 1. Per leggere il tempo totale risparmiato usare il metodo GET e inserire http://php-mysql.test/saved
 2. Per filtrare le prestazioni in base alla data usare il metodo GET e inserire http://php-mysql.test/date/:initialDate/:finalDate
-3. Per filtrare una prestazione in base alla tipologia usare il metodo GET e inserire http://php-mysql.test/typology/:type (se la tipologia di prestazione contiene più parole dividerle usanto "-" Esempio: water-bonus)
+3. Per filtrare una prestazione in base alla tipologia usare il metodo GET e inserire http://php-mysql.test/typology/:type
+<strong> (se la tipologia di prestazione contiene più parole dividerle usanto "-" Esempio: water-bonus)</strong>
 
 ### Installation
 
@@ -154,7 +155,7 @@ Salvatore D'Agostino - salvatore.dagostino.work@gmail.com
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/github_username/repo_name.svg?style=for-the-badge
+[contributors-shield]: https://img.shields.io/github/contributors/https://github.com/SalvatoreDag/Salvatore-D-Agostino-PHP-MYSQL.svg?style=for-the-badge
 [contributors-url]: https://github.com/github_username/repo_name/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/github_username/repo_name.svg?style=for-the-badge
 [forks-url]: https://github.com/github_username/repo_name/network/members
