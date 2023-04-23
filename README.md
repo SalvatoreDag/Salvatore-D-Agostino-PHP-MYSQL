@@ -70,6 +70,7 @@
         <li><a href="#tempo-risparmiato">Tempo Risparmiato</a></li>
       </ul>
     </li>
+    <li><a href="#installazione">Installazione</a></li>
     <li><a href="#contact">Contatti</a></li>
   </ol>
 </details>
@@ -89,8 +90,7 @@
 
 * [![PHP][PHP]][PHP-url]
 * [![MYSQL][MYSQL]][MYSQL-url]
-* <a href="https://www.php.net/">PHP</a>
-* <a href="https://www.mysql.com/">MY SQL</a>
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
@@ -124,20 +124,11 @@ risparmiato dai cittadini e di filtrare per data e prestazione.
 3. Per filtrare una prestazione in base alla tipologia usare il metodo GET e inserire http://php-mysql.test/typology/:type
 <strong> (se la tipologia di prestazione contiene più parole dividerle usanto "-" Esempio: water-bonus)</strong>
 
-### Installation
+### Installazione
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+ Clone the repo
    ```sh
-   git clone https://github.com/github_username/repo_name.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
+   git clone https://github.com/SalvatoreDag/Salvatore-D-Agostino-PHP-MYSQL
    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
