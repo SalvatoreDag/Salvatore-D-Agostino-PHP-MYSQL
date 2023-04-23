@@ -19,7 +19,7 @@
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
 [![Contributors][https://github.com/SalvatoreDag/Salvatore-D-Agostino-PHP-MYSQL/graphs/contributors]]
-[![Forks][forks-shield]][https://github.com/SalvatoreDag/Salvatore-D-Agostino-PHP-MYSQL/network/members]
+[![Forks][forks-shield][https://github.com/SalvatoreDag/Salvatore-D-Agostino-PHP-MYSQL/network/members]]
 [![Stargazers][stars-shield]][https://github.com/SalvatoreDag/Salvatore-D-Agostino-PHP-MYSQL/stargazers]
 [![Issues][issues-shield]][https://github.com/SalvatoreDag/Salvatore-D-Agostino-PHP-MYSQL/issues]
 [![MIT License][license-shield]][license-url]
