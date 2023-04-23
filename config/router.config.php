@@ -9,7 +9,7 @@ return [
         'GET' => [
             '/' => [OfferedController::class, 'getServices'],
             'services' => [OfferedController::class, 'getServices'],
-            'services/:id' => [OfferedController::class, 'getServices'],
+            'services/:id' => [OfferedController::class, 'getServicesById'],
             'provided' => [ProvidedController::class, 'getProvided'],
             'provided/:id' => [ProvidedController::class, 'getProvidedById'],
             'saved' => [OfferedController::class, 'timeSaved'],

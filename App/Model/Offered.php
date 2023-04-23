@@ -80,7 +80,7 @@ class Offered
         }
     }
 
-//query per il tempo risparmiato    
+//query per il tempo risparmiato       
 
     public function joinTables()
     {

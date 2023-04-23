@@ -63,7 +63,7 @@ class Response
 
      public function filteredByDate($result)
      {
-        //  var_dump($result);
+        
           if ($result) {
               http_response_code(200);
               echo json_encode(array("Time Saved" => $result));

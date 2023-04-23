@@ -59,7 +59,7 @@ class OfferedController
     }
 
 
- //richieste riguardo il tempo risparmiato
+    //richieste riguardo il tempo risparmiato
     public function timeSaved()
     {
         $times = $this->service->joinTables();
@@ -82,11 +82,10 @@ class OfferedController
             foreach ($times as $time) {
                 $total += $time['Saved'];
             }
-
-             $this->response->filteredByDate($total);
-
-            
+        }else {
+            $total = null;
         }
+        $this->response->filteredByDate($total);
     }
 
     public function filterByType($type)
