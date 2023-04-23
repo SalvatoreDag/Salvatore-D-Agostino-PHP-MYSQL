@@ -22,6 +22,7 @@
 [![Forks][forks-shield]][https://github.com/SalvatoreDag/Salvatore-D-Agostino-PHP-MYSQL/network/members]
 [![Stargazers][stars-shield]][https://github.com/SalvatoreDag/Salvatore-D-Agostino-PHP-MYSQL/stargazers]
 [![Issues][issues-shield]][https://github.com/SalvatoreDag/Salvatore-D-Agostino-PHP-MYSQL/issues]
+[![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][https://www.linkedin.com/in/salvatore-d-agostino/]
 
 
@@ -30,7 +31,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/SalvatoreDag/Salvatore-D-Agostino-PHP-MYSQL">
-    <img src="images/logo.png" alt="Logo" width="100" height="100">
+    <img src="images/logo.png" alt="Logo" width="120" height="120">
   </a>
 
 <h3 align="center">Progetto PHP-MYSQL per Start2Impact</h3>
