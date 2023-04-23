@@ -18,7 +18,7 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
-[![Contributors][contributors-shield]][<a href="https://github.com/SalvatoreDag/Salvatore-D-Agostino-PHP-MYSQL"></a>]
+[![Contributors][contributors-shield]<a href="https://github.com/SalvatoreDag/Salvatore-D-Agostino-PHP-MYSQL"></a>]
 [![Forks][forks-shield]][https://github.com/SalvatoreDag/Salvatore-D-Agostino-PHP-MYSQL/network/members]
 [![Stargazers][stars-shield]][https://github.com/SalvatoreDag/Salvatore-D-Agostino-PHP-MYSQL/stargazers]
 [![Issues][issues-shield]][https://github.com/SalvatoreDag/Salvatore-D-Agostino-PHP-MYSQL/issues]
