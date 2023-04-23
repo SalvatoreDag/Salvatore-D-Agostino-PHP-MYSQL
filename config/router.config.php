@@ -17,12 +17,12 @@ return [
             'typology/:type' => [OfferedController::class, 'filterByType'],
         ],
         'POST' => [
-            'services' => [OfferedController::class, 'save'],
-            'provided' => [ProvidedController::class, 'save'],
+            'services' => [OfferedController::class, 'create'],
+            'provided' => [ProvidedController::class, 'create'],
         ],
         'PUT' => [
-            'services/:id' => [OfferedController::class, 'save'],
-            'provided/:id' => [ProvidedController::class, 'save'],
+            'services/:id' => [OfferedController::class, 'update'],
+            'provided/:id' => [ProvidedController::class, 'update'],
         ],
         'DELETE' => [
             'services/:id/delete' => [OfferedController::class, 'delete'],

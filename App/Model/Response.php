@@ -20,8 +20,7 @@ class Response
     {
         if ($result) {
             http_response_code(201);
-            $json = strip_tags(json_encode(array("message" => "Service added successfully")));
-            echo $json;
+            echo json_encode(array("message" => "Service added"));
         } else {
             http_response_code(503);
             echo json_encode(array("error" => "Failed to create the service"));

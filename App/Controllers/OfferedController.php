@@ -34,22 +34,22 @@ class OfferedController
         $this->response->read($result);
     }
 
-    public function save(?int $id = null)
-    {
+    public function create(){
+        $post = [
+            'name' => $_POST['name'],
+            'time' => $_POST['time']
+        ];
+        $result = $this->service->create($post);
+        $this->response->create($result);
+    }
 
-        if (!$id) {
-            $post = [
-                'name' => $_POST['name'],
-                'time' => $_POST['time']
-            ];
-            $result = $this->service->create($post);
-            $this->response->create($result);
-        } else {
+    public function update(int $id)
+    {
             parse_str(file_get_contents("php://input"), $put_vars);
             $post = $put_vars;
             $result = $this->service->update($post, $id);
             $this->response->update($result);
-        }
+    
     }
 
     public function delete(int $id)

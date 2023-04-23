@@ -29,22 +29,22 @@ class ProvidedController {
          $this->response->read($result);
     }
 
-    public function save(?int $id = null)
-    {
+    public function create (){
+        $post = [
+            'title' => $_POST['title'],
+            'quantity' => $_POST['quantity']
+        ];
+        $result = $this->provided->create($post);
+        $this->response->create($result);
+    }
 
-        if (!$id) {
-            $post = [
-                'title' => $_POST['title'],
-                'quantity' => $_POST['quantity']
-            ];
-            $result = $this->provided->create($post);
-            $this->response->create($result);
-        } else {
+    public function update(int $id)
+    {
             parse_str(file_get_contents("php://input"), $put_vars);
             $post = $put_vars;
             $result = $this->provided->update($post, $id);
             $this->response->update($result);
-        }
+        
     }
     public function delete(int $id)
     {
