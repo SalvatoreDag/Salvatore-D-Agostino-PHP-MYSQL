@@ -106,10 +106,14 @@ risparmiato dai cittadini e di filtrare per data e prestazione.
 1. Per leggere tutte le prestazioni offerte usare il metodo GET e inserire /services
  <img src="images/url-services.png" >
  <img src="images/response-services.png" >
-2. Per leggere una prestazione offerte in particolare usare il metodo GET e inserire http://php-mysql.test/services/:id 
-3. Per inserire una prestazione offerte usare il metodo POST e inserire http://php-mysql.test/services
-4. Per modificare una prestazione offerte usare il medoto PUT e inserire http://php-mysql.test/services/:id
-5. Per eliminare una prestazione offerte usare il metodo DELETE e inserire http://php-mysql.test/services/{id}/delete
+2. Per leggere una prestazione offerte in particolare usare il metodo GET e inserire /services/:id 
+<img src="images/id-services.png" >
+3. Per inserire una prestazione offerte usare il metodo POST e inserire /services
+<img src="images/post-offered.png" >
+4. Per modificare una prestazione offerte usare il medoto PUT e inserire /services/:id
+<img src="images/put-offered.png" >
+5. Per eliminare una prestazione offerte usare il metodo DELETE e inserire /services/:id/delete
+<img src="images/delete-offered.png" >
 
 ### Prestazioni erogate
 
