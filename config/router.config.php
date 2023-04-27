@@ -8,8 +8,8 @@ return [
     'routes' => [
         'GET' => [
             '/' => [OfferedController::class, 'getServices'],
-            'services' => [OfferedController::class, 'getServices'],
-            'services/:id' => [OfferedController::class, 'getServicesById'],
+            'offered' => [OfferedController::class, 'getServices'],
+            'offered/:id' => [OfferedController::class, 'getServicesById'],
             'provided' => [ProvidedController::class, 'getProvided'],
             'provided/:id' => [ProvidedController::class, 'getProvidedById'],
             'saved' => [OfferedController::class, 'timeSaved'],
@@ -17,15 +17,15 @@ return [
             'typology/:type' => [OfferedController::class, 'filterByType'],
         ],
         'POST' => [
-            'services' => [OfferedController::class, 'create'],
+            'offered' => [OfferedController::class, 'create'],
             'provided' => [ProvidedController::class, 'create'],
         ],
         'PUT' => [
-            'services/:id' => [OfferedController::class, 'update'],
+            'offered/:id' => [OfferedController::class, 'update'],
             'provided/:id' => [ProvidedController::class, 'update'],
         ],
         'DELETE' => [
-            'services/:id/delete' => [OfferedController::class, 'delete'],
+            'offered/:id/delete' => [OfferedController::class, 'delete'],
             'provided/:id/delete' => [ProvidedController::class, 'delete'],
         ]
     ]

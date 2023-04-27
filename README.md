@@ -103,20 +103,20 @@ risparmiato dai cittadini e di filtrare per data e prestazione.
 
 ### Prestazioni offerte
 
-1. Per leggere tutte le prestazioni offerte usare il metodo GET e inserire /services
+1. Per leggere tutte le prestazioni offerte usare il metodo GET e inserire /offered
  <img src="images/url-services.png">
  <img src="images/response-services.png" >
 
-2. Per leggere una prestazione offerte in particolare usare il metodo GET e inserire /services/:id 
+2. Per leggere una prestazione offerte in particolare usare il metodo GET e inserire /offered/:id 
 <img src="images/id-services.png" >
 
-3. Per inserire una prestazione offerte usare il metodo POST, inserire /services e inserire i parametri "name" e "time"
+3. Per inserire una prestazione offerte usare il metodo POST, inserire /offered e inserire i parametri "name" e "time"
 <img src="images/post-offered.png" >
 
-4. Per modificare una prestazione offerte usare il medoto PUT, inserire /services/:id e inserire i parametri "name" e "time"
+4. Per modificare una prestazione offerte usare il medoto PUT, inserire /offered/:id e inserire i parametri "name" e "time"
 <img src="images/put-offered.png" >
 
-5. Per eliminare una prestazione offerte usare il metodo DELETE e inserire /services/:id/delete
+5. Per eliminare una prestazione offerte usare il metodo DELETE e inserire /offered/:id/delete
 <img src="images/delete-offered.png" >
 
 ### Prestazioni erogate
