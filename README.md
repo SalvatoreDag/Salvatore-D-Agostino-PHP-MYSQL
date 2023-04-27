@@ -146,7 +146,7 @@ risparmiato dai cittadini e di filtrare per data e prestazione.
 <img src="images/date.png">
 
 3. Per filtrare una prestazione in base alla tipologia usare il metodo GET e inserire /typology/:type
-<strong> (se la tipologia di prestazione contiene più parole dividerle usando "-" Esempio: water-bonus)</strong>
+<strong> (se la tipologia di prestazione contiene più parole dividerle usando "-" Esempio: tv-bonus)</strong>
 <img src="images/typology.png">
 
 ### Installazione
