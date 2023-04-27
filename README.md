@@ -104,7 +104,7 @@ risparmiato dai cittadini e di filtrare per data e prestazione.
 ### Prestazioni offerte
 
 1. Per leggere tutte le prestazioni offerte usare il metodo GET e inserire /services
- <img src="images/url-services.png" >
+ <img src="images/url-services.png" width="500" height="500" >
  <img src="images/response-services.png" >
 2. Per leggere una prestazione offerte in particolare usare il metodo GET e inserire /services/:id 
 <img src="images/id-services.png" >
