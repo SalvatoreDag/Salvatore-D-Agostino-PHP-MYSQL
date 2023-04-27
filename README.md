@@ -111,7 +111,9 @@ risparmiato dai cittadini e di filtrare per data e prestazione.
 
 ### Prestazioni erogate
 
-1. Per leggere tutte le prestazioni erogate usare il metodo GET e inserire http://php-mysql.test/provided
+1. Per leggere tutte le prestazioni erogate usare il metodo GET e inserire /provided
+ <img src="images/url-services.png" alt="Logo" width="120" height="120">
+ <img src="images/response-services.png" alt="Logo" width="120" height="120">
 2. Per leggere una prestazione erogata in particolare usare il metodo GET e inserire http://php-mysql.test/provided/{id} 
 3. Per inserire una prestazione erogata usare il metodo POST e inserire http://php-mysql.test/provided
 4. Per modificare una prestazione erogata usare il medoto PUT e inserire http://php-mysql.test/provided/{id}
