@@ -104,18 +104,18 @@ risparmiato dai cittadini e di filtrare per data e prestazione.
 ### Prestazioni offerte
 
 1. Per leggere tutte le prestazioni offerte usare il metodo GET e inserire http://php-mysql.test/services
-2. Per leggere una prestazione offerte in particolare usare il metodo GET e inserire http://php-mysql.test/services/{id} 
+2. Per leggere una prestazione offerte in particolare usare il metodo GET e inserire http://php-mysql.test/services/:id 
 3. Per inserire una prestazione offerte usare il metodo POST e inserire http://php-mysql.test/services
-4. Per modificare una prestazione offerte usare il medoto PUT e inserire http://php-mysql.test/services/{id}
+4. Per modificare una prestazione offerte usare il medoto PUT e inserire http://php-mysql.test/services/:id
 5. Per eliminare una prestazione offerte usare il metodo DELETE e inserire http://php-mysql.test/services/{id}/delete
 
 ### Prestazioni erogate
 
 1. Per leggere tutte le prestazioni erogate usare il metodo GET e inserire http://php-mysql.test/provided
-2. Per leggere una prestazione erogata in particolare usare il metodo GET e inserire http://php-mysql.test/provided/{id} 
+2. Per leggere una prestazione erogata in particolare usare il metodo GET e inserire http://php-mysql.test/provided/:id
 3. Per inserire una prestazione erogata usare il metodo POST e inserire http://php-mysql.test/provided
-4. Per modificare una prestazione erogata usare il medoto PUT e inserire http://php-mysql.test/provided/{id}
-5. Per eliminare una prestazione erogata usare il metodo DELETE e inserire http://php-mysql.test/provided/{id}/delete
+4. Per modificare una prestazione erogata usare il medoto PUT e inserire http://php-mysql.test/provided/:id
+5. Per eliminare una prestazione erogata usare il metodo DELETE e inserire http://php-mysql.test/provided/:id/delete
 
 ### Tempo Rispamiato
 
