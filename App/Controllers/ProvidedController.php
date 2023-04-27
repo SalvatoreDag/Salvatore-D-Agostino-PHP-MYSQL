@@ -4,7 +4,7 @@
 namespace App\Controllers;
 
 use PDO;
-use App\Models\Response;
+use App\View\Response;
 use App\Models\Provided;
 
 class ProvidedController {

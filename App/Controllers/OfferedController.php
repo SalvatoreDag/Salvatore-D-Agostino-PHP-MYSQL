@@ -6,7 +6,7 @@ namespace App\Controllers;
 
 use PDO;
 use App\Models\Offered;
-use App\Models\Response;
+use App\View\Response;
 
 
 
