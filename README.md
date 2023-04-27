@@ -106,12 +106,16 @@ risparmiato dai cittadini e di filtrare per data e prestazione.
 1. Per leggere tutte le prestazioni offerte usare il metodo GET e inserire /services
  <img src="images/url-services.png">
  <img src="images/response-services.png" >
+
 2. Per leggere una prestazione offerte in particolare usare il metodo GET e inserire /services/:id 
 <img src="images/id-services.png" >
-3. Per inserire una prestazione offerte usare il metodo POST e inserire /services
+
+3. Per inserire una prestazione offerte usare il metodo POST, inserire /services e inserire i parametri "name" e "time"
 <img src="images/post-offered.png" >
-4. Per modificare una prestazione offerte usare il medoto PUT e inserire /services/:id
+
+4. Per modificare una prestazione offerte usare il medoto PUT, inserire /services/:id e inserire i parametri "name" e "time"
 <img src="images/put-offered.png" >
+
 5. Per eliminare una prestazione offerte usare il metodo DELETE e inserire /services/:id/delete
 <img src="images/delete-offered.png" >
 
@@ -120,12 +124,16 @@ risparmiato dai cittadini e di filtrare per data e prestazione.
 1. Per leggere tutte le prestazioni erogate usare il metodo GET e inserire /provided
 <img src="images/url-provided.png">
  <img src="images/response-provided.png" >
+
 2. Per leggere una prestazione erogata in particolare usare il metodo GET e inserire /provided/:id
 <img src="images/id-provided.png" >
-3. Per inserire una prestazione erogata usare il metodo POST e inserire /provided
+
+3. Per inserire una prestazione erogata usare il metodo POST, inserire /provided e inserire i parametri "title" e "quantity"
 <img src="images/post-provided.png" >
-4. Per modificare una prestazione erogata usare il medoto PUT e inserire /provided/:id
+
+4. Per modificare una prestazione erogata usare il medoto PUT, inserire /provided/:id e inserire i parametri "title" e "quantity"
 <img src="images/put-provided.png" >
+
 5. Per eliminare una prestazione erogata usare il metodo DELETE e inserire /provided/:id/delete
 <img src="images/delete-provided.png" >
 
