@@ -104,8 +104,8 @@ risparmiato dai cittadini e di filtrare per data e prestazione.
 ### Prestazioni offerte
 
 1. Per leggere tutte le prestazioni offerte usare il metodo GET e inserire /services
- <img src="images/url-services.png" alt="Logo" width="120" height="120">
- <img src="images/response-services.png" alt="Logo" width="120" height="120">
+ <img src="images/url-services.png" >
+ <img src="images/response-services.png" >
 2. Per leggere una prestazione offerte in particolare usare il metodo GET e inserire http://php-mysql.test/services/:id 
 3. Per inserire una prestazione offerte usare il metodo POST e inserire http://php-mysql.test/services
 4. Per modificare una prestazione offerte usare il medoto PUT e inserire http://php-mysql.test/services/:id
