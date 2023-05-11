@@ -1,6 +1,6 @@
 <?php
 //file che contiene tutti i require
-
+require_once './vendor/autoload.php';
 require_once './DB/DbPdo.php';
 require_once './DB/DbFactory.php';
 require_once './config/database.php';
