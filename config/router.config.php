@@ -11,7 +11,7 @@ return [
             'services_offered' => [OfferedController::class, 'getServices'],
             // 'services_offered/:id' => [OfferedController::class, 'getServicesById'],
             'services_provided' => [ProvidedController::class, 'getProvided'],
-            // 'services_provided/:id' => [ProvidedController::class, 'getProvidedById'],
+             'services_provided/:id' => [ProvidedController::class, 'getProvidedById'],
             'time_saved' => [OfferedController::class, 'timeSaved'],
             'services_provided/:initialDate/:finalDate' => [OfferedController::class, 'filterByDate'],
             'services_provided/:type' => [OfferedController::class, 'filterByType'],
