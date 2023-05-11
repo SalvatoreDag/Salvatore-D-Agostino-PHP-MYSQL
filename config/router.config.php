@@ -8,25 +8,25 @@ return [
     'routes' => [
         'GET' => [
             '/' => [OfferedController::class, 'getServices'],
-            'offered' => [OfferedController::class, 'getServices'],
-            'offered/:id' => [OfferedController::class, 'getServicesById'],
-            'provided' => [ProvidedController::class, 'getProvided'],
-            'provided/:id' => [ProvidedController::class, 'getProvidedById'],
-            'saved' => [OfferedController::class, 'timeSaved'],
-            'date/:initialDate/:finalDate' => [OfferedController::class, 'filterByDate'],
-            'typology/:type' => [OfferedController::class, 'filterByType'],
+            'services_offered' => [OfferedController::class, 'getServices'],
+            // 'services_offered/:id' => [OfferedController::class, 'getServicesById'],
+            'services_provided' => [ProvidedController::class, 'getProvided'],
+            // 'services_provided/:id' => [ProvidedController::class, 'getProvidedById'],
+            'time_saved' => [OfferedController::class, 'timeSaved'],
+            'services_provided/:initialDate/:finalDate' => [OfferedController::class, 'filterByDate'],
+            'services_provided/:type' => [OfferedController::class, 'filterByType'],
         ],
         'POST' => [
-            'offered' => [OfferedController::class, 'create'],
-            'provided' => [ProvidedController::class, 'create'],
+            'services_offered' => [OfferedController::class, 'create'],
+            'services_provided' => [ProvidedController::class, 'create'],
         ],
         'PUT' => [
-            'offered/:id' => [OfferedController::class, 'update'],
-            'provided/:id' => [ProvidedController::class, 'update'],
+            'services_offered/:id' => [OfferedController::class, 'update'],
+            'services_provided/:id' => [ProvidedController::class, 'update'],
         ],
         'DELETE' => [
-            'offered/:id/delete' => [OfferedController::class, 'delete'],
-            'provided/:id/delete' => [ProvidedController::class, 'delete'],
+            'services_offered/:id/delete' => [OfferedController::class, 'delete'],
+            'services_provided/:id/delete' => [ProvidedController::class, 'delete'],
         ]
     ]
 ];

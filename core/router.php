@@ -41,9 +41,9 @@ class Router
     { //metodo per il controllo delle rotte 
         $ret = [];
         foreach ($urls as $seg => $classArray) {
-            if (!str_contains($seg, ':')) { //continua solo se non ho i : nel url
-                continue;
-            }
+            // if (!str_contains($seg, ':')) { //continua solo se non ho i : nel url
+            //     continue;
+            // }
 
             $seg = preg_quote($seg); //i caratteri speciali vengono considerati come caratteri normali
             //la \ serve a non dare un significato ai : e la doppia barra a non dare significato alla \

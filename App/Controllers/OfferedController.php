@@ -75,7 +75,6 @@ class OfferedController
 
     public function filterByDate($initialDate, $finalDate)
     {
-
         $times = $this->service->filterByDate($initialDate, $finalDate);
         $total = 0;
         if ($times) {
@@ -85,6 +84,7 @@ class OfferedController
         }else {
             $total = null;
         }
+        
         $this->response->filteredByDate($total);
     }
 
