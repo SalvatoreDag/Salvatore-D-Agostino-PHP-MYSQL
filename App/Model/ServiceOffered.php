@@ -5,7 +5,7 @@ namespace App\Models;
 
 use PDO;
 
-class Offered
+class ServiceOffered
 {
 
     public function __construct(protected PDO $conn)

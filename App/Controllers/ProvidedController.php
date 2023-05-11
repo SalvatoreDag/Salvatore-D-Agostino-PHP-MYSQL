@@ -5,15 +5,15 @@ namespace App\Controllers;
 
 use PDO;
 use App\View\Response;
-use App\Models\Provided;
+use App\Models\ServiceProvided;
 
 class ProvidedController {
     
     protected Response $response;
-    protected Provided $provided;
+    protected ServiceProvided $provided;
 
     public function __construct(protected PDO $conn){
-       $this->provided = new Provided($conn);
+       $this->provided = new ServiceProvided($conn);
        $this->response = new Response();
     }
 

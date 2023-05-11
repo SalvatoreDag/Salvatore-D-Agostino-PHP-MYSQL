@@ -5,7 +5,7 @@ namespace App\Controllers;
 
 
 use PDO;
-use App\Models\Offered;
+use App\Models\ServiceOffered;
 use App\View\Response;
 
 
@@ -13,13 +13,13 @@ use App\View\Response;
 class OfferedController
 {
 
-    protected Offered $service;
+    protected ServiceOffered $service;
     protected Response $response;
     public $data;
 
     public function __construct(protected PDO $conn)
     {
-        $this->service = new Offered($conn);
+        $this->service = new ServiceOffered($conn);
         $this->response = new Response();
     }
 
