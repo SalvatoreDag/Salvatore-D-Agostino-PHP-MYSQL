@@ -41,15 +41,32 @@ class Provided
 
     public function create(array $post)
     {
-        $query = 'INSERT INTO services_provided (Date, Title, Quantity) VALUES (:date, :title, :quantity)';
+
+        $sql = "SELECT id FROM services_offered WHERE Name = :title";
+        $query = 'INSERT INTO services_provided (service_id, Date, Title, Quantity) VALUES (:id, :date, :title, :quantity)';
+        $stmt = $this->conn->prepare($sql);
         $stm = $this->conn->prepare($query);
 
-        if ($stm) {
-            $res = $stm->execute([
-                'date' => date('Y-m-d H-i-s'),
+        if ($stm && $stmt) {
+
+            $stmt->execute([
                 'title' => $post['title'],
-                'quantity' => $post['quantity'],
             ]);
+            $id = $stmt->fetchColumn();
+
+
+            //se non esiste il relativo servizio in service_offered non esegue la query
+            if ($id) {
+                $res = $stm->execute([
+                    'id' => $id,
+                    'date' => date('Y-m-d H-i-s'),
+                    'title' => $post['title'],
+                    'quantity' => $post['quantity'],
+                ]);
+            }
+
+
+
             return $stm->rowCount();
         }
     }

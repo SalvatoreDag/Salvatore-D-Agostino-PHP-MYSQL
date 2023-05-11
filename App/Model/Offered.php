@@ -84,7 +84,7 @@ class Offered
 
     public function joinTables()
     {
-        $query = 'SELECT *, Time * Quantity AS Saved FROM services_offered INNER JOIN services_provided ON services_offered.Name = services_provided.Title ORDER BY Date ASC';
+        $query = 'SELECT *, Time * Quantity AS Saved FROM services_offered INNER JOIN services_provided ON services_offered.id = services_provided.service_id ORDER BY Date ASC';
         $stm = $this->conn->prepare($query);
 
         if ($stm) {
@@ -95,7 +95,7 @@ class Offered
 
     public function filterByDate($initialDate, $finalDate)
     {
-        $query = 'SELECT *, Time * Quantity AS Saved FROM services_offered INNER JOIN services_provided ON services_offered.Name = services_provided.Title WHERE Date BETWEEN :initialDate AND :finalDate ORDER BY Date ASC';
+        $query = 'SELECT *, Time * Quantity AS Saved FROM services_offered INNER JOIN services_provided ON services_offered.id = services_provided.service_id WHERE Date BETWEEN :initialDate AND :finalDate ORDER BY Date ASC';
         $stm = $this->conn->prepare($query);
 
         $stm->bindParam(":initialDate", $initialDate);
@@ -109,7 +109,7 @@ class Offered
 
     public function filterByType($type)
     {
-        $query = 'SELECT *, Time * Quantity AS Saved FROM services_offered INNER JOIN services_provided ON services_offered.Name = services_provided.Title WHERE Title = :type ORDER BY Date ASC';
+        $query = 'SELECT *, Time * Quantity AS Saved FROM services_offered INNER JOIN services_provided ON services_offered.id = services_provided.service_id WHERE Title = :type ORDER BY Date ASC';
         $stm = $this->conn->prepare($query);
         
         $stm->bindParam(":type", $type);
