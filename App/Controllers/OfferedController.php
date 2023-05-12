@@ -28,9 +28,9 @@ class OfferedController
         $result = $this->service->all();
         $this->response->read($result);
     }
-    public function getServicesById(int $id)
+    public function getServicesById($id)
     {
-        $result = $this->service->serviceById($id);
+        $result = $this->service->serviceById($id[0]);
         $this->response->read($result);
     }
 
@@ -43,18 +43,18 @@ class OfferedController
         $this->response->create($result);
     }
 
-    public function update(int $id)
+    public function update($id)
     {
             parse_str(file_get_contents("php://input"), $put_vars);
             $post = $put_vars;
-            $result = $this->service->update($post, $id);
+            $result = $this->service->update($post, $id[0]);
             $this->response->update($result);
     
     }
 
-    public function delete(int $id)
+    public function delete($id)
     {
-        $result = $this->service->delete($id);
+        $result = $this->service->delete($id[0]);
         $this->response->delete($result);
     }
 
@@ -73,25 +73,27 @@ class OfferedController
         }
     }
 
-    public function filterByDate($initialDate, $finalDate)
-    {
-        $times = $this->service->filterByDate($initialDate, $finalDate);
-        $total = 0;
-        if ($times) {
-            foreach ($times as $time) {
-                $total += $time['Saved'];
-            }
-        }else {
-            $total = null;
-        }
-        
-        $this->response->filteredByDate($total);
-    }
-
-    public function filterByType($type)
-    {
-        $type = str_replace('-', ' ', $type);
-        $times = $this->service->filterByType($type);
+    public function filter($filter)
+{       
+        //filtro per tipologia
+        if(array_key_exists("type", $filter)){
+        $filter = str_replace('-', ' ', $filter);
+        $times = $this->service->filterByType($filter);
         $this->response->filteredByType($times);
+
+        //filtro per data
+        }else{
+            $times = $this->service->filterByDate($filter);
+            $total = 0;
+            if ($times) {
+                foreach ($times as $time) {
+                    $total += $time['Saved'];
+                }
+            }else {
+                $total = null;
+            }
+            
+            $this->response->filteredByDate($total);
+        }
     }
 }

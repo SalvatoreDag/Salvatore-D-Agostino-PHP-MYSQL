@@ -60,18 +60,18 @@ class Response
         }
     }
 
-     public function filteredByDate($result)
-     {
-        
-          if ($result) {
-              http_response_code(200);
-              echo json_encode(array("Time Saved" => $result));
-          } else {
-              http_response_code(204);
-          }
-     }
+    public function filteredByDate($result)
+    {
+        if ($result) {
+            http_response_code(200);
+            echo json_encode(array("Time Saved" => $result));
+        } else {
+            http_response_code(204);
+        }
+    }
 
-    public function filteredByType($result){
+    public function filteredByType($result)
+    {
         if ($result) {
             http_response_code(200);
             echo json_encode(array("Typology" => $result[0]['Name'], "Time Saved" => $result[0]['Saved']));

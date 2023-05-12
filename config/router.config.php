@@ -9,12 +9,12 @@ return [
         'GET' => [
             '/' => [OfferedController::class, 'getServices'],
             'services_offered' => [OfferedController::class, 'getServices'],
-            // 'services_offered/:id' => [OfferedController::class, 'getServicesById'],
-            'services_provided' => [ProvidedController::class, 'getProvided'],
+            'services_offered/:id' => [OfferedController::class, 'getServicesById'],
+             'services_provided' => [ProvidedController::class, 'getProvided'],
              'services_provided/:id' => [ProvidedController::class, 'getProvidedById'],
             'time_saved' => [OfferedController::class, 'timeSaved'],
-            'services_provided/:initialDate/:finalDate' => [OfferedController::class, 'filterByDate'],
-            'services_provided/:type' => [OfferedController::class, 'filterByType'],
+            'provided_services?filters[start_date]=&filters[end_date]=' => [OfferedController::class, 'filter'],
+            'provided_services?filters[type]=' => [OfferedController::class, 'filter']
         ],
         'POST' => [
             'services_offered' => [OfferedController::class, 'create'],

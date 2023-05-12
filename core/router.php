@@ -29,7 +29,9 @@ class Router
             return $urls[$segment];
         }
 
+
         $ret = $this->matchRoute($urls, $segment);
+
         if (!$ret) {
             throw new Exception('No routes matched'); //se l'array è vuoto non ha trovato una rotta
         }
@@ -39,21 +41,29 @@ class Router
     //questo metodo restituirà classe e metodo e altri parametri
     protected function matchRoute(array $urls, string $segment): array
     { //metodo per il controllo delle rotte 
-        $ret = [];
-        foreach ($urls as $seg => $classArray) {
-            // if (!str_contains($seg, ':')) { //continua solo se non ho i : nel url
-            //     continue;
-            // }
 
-            $seg = preg_quote($seg); //i caratteri speciali vengono considerati come caratteri normali
-            //la \ serve a non dare un significato ai : e la doppia barra a non dare significato alla \
-            $pattern = preg_replace('/\\\:[a-zA-Z0-9\-\_]+/', '([a-zA-Z0-9\-\_]+)', $seg); //sostiuira id con un numero nell'url (seg)
-            $matches = []; //array che cattura le coincidenze
-            if (preg_match('@^' . $pattern . '$@', $segment, $matches)) { //viene utilizzata per cercare una corrispondenza di una espressione regolare all'interno di una stringa.
-                array_shift($matches); //estrae il primo elemento di un array
-                $classArray[] = $matches;
-                $ret = $classArray;
+        $ret = [];
+
+        foreach ($urls as $seg => $classArray) {
+
+            //gestione rotte con filtri
+            if (str_contains($seg, 'filters')) {
+                $ret = [$classArray[0], $classArray[1], $_GET['filters']];
                 break;
+            }
+
+           //gestione rotte con id
+            if (str_contains($seg, ':')) { //continua solo se non ho i : nel url
+                $seg = preg_quote($seg); //i caratteri speciali vengono considerati come caratteri normali
+                //la \ serve a non dare un significato ai : e la doppia barra a non dare significato alla \
+                $pattern = preg_replace('/\\\:[a-zA-Z0-9\-\_]+/', '([a-zA-Z0-9\-\_]+)', $seg); //sostiuira id con un numero nell'url (seg)
+                $matches = []; //array che cattura le coincidenze
+                if (preg_match('@^' . $pattern . '$@', $segment, $matches)) { //viene utilizzata per cercare una corrispondenza di una espressione regolare all'interno di una stringa.
+                    array_shift($matches); //estrae il primo elemento di un array
+                    $classArray[] = $matches;
+                    $ret = $classArray;
+                    break;
+                }
             }
         }
 

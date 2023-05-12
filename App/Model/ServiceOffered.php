@@ -93,13 +93,13 @@ class ServiceOffered
         }
     }
 
-    public function filterByDate($initialDate, $finalDate)
+    public function filterByDate($date)
     {
         $query = 'SELECT *, Time * Quantity AS Saved FROM services_offered INNER JOIN services_provided ON services_offered.id = services_provided.service_id WHERE Date BETWEEN :initialDate AND :finalDate ORDER BY Date ASC';
         $stm = $this->conn->prepare($query);
 
-        $stm->bindParam(":initialDate", $initialDate);
-        $stm->bindParam(":finalDate", $finalDate);
+        $stm->bindParam(":initialDate", $date['start_date']);
+        $stm->bindParam(":finalDate", $date['end_date']);
 
         if ($stm) {
             $res = $stm->execute();
@@ -112,7 +112,7 @@ class ServiceOffered
         $query = 'SELECT *, Time * Quantity AS Saved FROM services_offered INNER JOIN services_provided ON services_offered.id = services_provided.service_id WHERE Title = :type ORDER BY Date ASC';
         $stm = $this->conn->prepare($query);
         
-        $stm->bindParam(":type", $type);
+        $stm->bindParam(":type", $type['type']);
 
         if ($stm) {
             $res = $stm->execute();
