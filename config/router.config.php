@@ -10,8 +10,8 @@ return [
             '/' => [OfferedController::class, 'getServices'],
             'services_offered' => [OfferedController::class, 'getServices'],
             'services_offered/:id' => [OfferedController::class, 'getServicesById'],
-             'services_provided' => [ProvidedController::class, 'getProvided'],
-             'services_provided/:id' => [ProvidedController::class, 'getProvidedById'],
+            'services_provided' => [ProvidedController::class, 'getProvided'],
+            'services_provided/:id' => [ProvidedController::class, 'getProvidedById'],
             'time_saved' => [OfferedController::class, 'timeSaved'],
             'provided_services?filters[start_date]=&filters[end_date]=' => [OfferedController::class, 'filter'],
             'provided_services?filters[type]=' => [OfferedController::class, 'filter']

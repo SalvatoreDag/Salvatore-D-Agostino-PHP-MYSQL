@@ -103,50 +103,48 @@ risparmiato dai cittadini e di filtrare per data e prestazione.
 
 ### Prestazioni offerte
 
-1. Per leggere tutte le prestazioni offerte usare il metodo GET e inserire /offered
- <img src="images/url-services.png">
+1. Per leggere tutte le prestazioni offerte usare il metodo GET e inserire /services_offered
  <img src="images/response-services.png" >
 
-2. Per leggere una prestazione offerte in particolare usare il metodo GET e inserire /offered/:id 
+2. Per leggere una prestazione offerte in particolare usare il metodo GET e inserire /services_offered/:id 
 <img src="images/id-services.png" >
 
-3. Per inserire una prestazione offerte usare il metodo POST, inserire /offered e inserire i parametri "name" e "time"
+3. Per inserire una prestazione offerta usare il metodo POST, inserire /services_offered e inserire i parametri "name" e "time"
 <img src="images/post-offered.png" >
 
-4. Per modificare una prestazione offerte usare il medoto PUT, inserire /offered/:id e inserire i parametri "name" e "time"
+4. Per modificare una prestazione offerte usare il medoto PUT, inserire /services_offered/:id e inserire i parametri "name" e "time"
 <img src="images/put-offered.png" >
 
-5. Per eliminare una prestazione offerte usare il metodo DELETE e inserire /offered/:id/delete
+5. Per eliminare una prestazione offerte usare il metodo DELETE e inserire /services_offered/:id/delete
 <img src="images/delete-offered.png" >
 
 ### Prestazioni erogate
 
-1. Per leggere tutte le prestazioni erogate usare il metodo GET e inserire /provided
-<img src="images/url-provided.png">
+1. Per leggere tutte le prestazioni erogate usare il metodo GET e inserire /services_provided
  <img src="images/response-provided.png" >
 
-2. Per leggere una prestazione erogata in particolare usare il metodo GET e inserire /provided/:id
+2. Per leggere una prestazione erogata in particolare usare il metodo GET e inserire /services_provided/:id
 <img src="images/id-provided.png" >
 
-3. Per inserire una prestazione erogata usare il metodo POST, inserire /provided e inserire i parametri "title" e "quantity"
+3. Per inserire una prestazione erogata usare il metodo POST, inserire /services_provided e inserire i parametri "title" e "quantity"
 <img src="images/post-provided.png" >
 
-4. Per modificare una prestazione erogata usare il medoto PUT, inserire /provided/:id e inserire i parametri "title" e "quantity"
+4. Per modificare una prestazione erogata usare il medoto PUT, inserire /services_provided/:id e inserire i parametri "title" e "quantity"
 <img src="images/put-provided.png" >
 
-5. Per eliminare una prestazione erogata usare il metodo DELETE e inserire /provided/:id/delete
+5. Per eliminare una prestazione erogata usare il metodo DELETE e inserire /services_provided/:id/delete
 <img src="images/delete-provided.png" >
 
 ### Tempo Rispamiato
 
-1. Per leggere il tempo totale risparmiato usare il metodo GET e inserire /saved
+1. Per leggere il tempo totale risparmiato usare il metodo GET e inserire /time_saved
 <img src="images/saved.png">
 
-2. Per filtrare le prestazioni in base alla data usare il metodo GET e inserire /date/:initialDate/:finalDate <strong>(le date vanno inserite usando il formato YYYY/MM/DD Esempio: date/2023-04-19/2023-04-20)</strong>
+2. Per filtrare le prestazioni in base alla data usare il metodo GET e inserire /provided_services?filters[start_date]=&filters[end_date]= <strong>(le date vanno inserite usando il formato YYYY/MM/DD Esempio: provided_services?filters[start_date]=2023-05-12&filters[end_date]=2023-05-12)</strong>
 <img src="images/date.png">
 
-3. Per filtrare una prestazione in base alla tipologia usare il metodo GET e inserire /typology/:type
-<strong> (se la tipologia di prestazione contiene più parole dividerle usando "-" Esempio: tv-bonus)</strong>
+3. Per filtrare una prestazione in base alla tipologia usare il metodo GET e inserire /provided_services?filters[type]=
+<strong> (se la tipologia di prestazione contiene più parole dividerle usando "-" Esempio: provided_services?filters[type]=tv-bonus)</strong>
 <img src="images/typology.png">
 
 ### Installazione
