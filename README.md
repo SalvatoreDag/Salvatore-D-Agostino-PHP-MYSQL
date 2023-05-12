@@ -116,7 +116,7 @@ risparmiato dai cittadini e di filtrare per data e prestazione.
 <img src="images/put-offered.png" >
 
 5. Per eliminare una prestazione offerte usare il metodo DELETE e inserire /services_offered/:id/delete
-<strong>Cancellare una prestazione offerta cancellerà anche la prestazione erogata legata ad essa</strong>
+<strong>(Cancellare una prestazione offerta cancellerà anche la prestazione erogata legata ad essa)</strong>
 <img src="images/delete-offered.png" >
 
 ### Prestazioni erogate
