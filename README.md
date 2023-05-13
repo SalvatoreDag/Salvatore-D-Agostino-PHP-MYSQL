@@ -150,12 +150,12 @@ risparmiato dai cittadini e di filtrare per data e prestazione.
 
 ### Installazione
 
- Clone the repo
+ 1. Clone the repo
    ```sh
    git clone https://github.com/SalvatoreDag/Salvatore-D-Agostino-PHP-MYSQL
    ```
 
-  Accesso al database
+  2. Accesso al database
    In config si trova il file ".env.example" che contiene 3 campi vuoti. Rinominare il fine in ".env" e compilare i campi vuoti con le proprie credenziali per accedere al database
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
