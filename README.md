@@ -156,7 +156,7 @@ risparmiato dai cittadini e di filtrare per data e prestazione.
    ```
 
   2. Accesso al database
-   In config si trova il file ".env.example" che contiene 3 campi vuoti. Rinominare il fine in ".env" e compilare i campi vuoti con le proprie credenziali per accedere al database
+   <p>In config si trova il file ".env.example" che contiene 3 campi vuoti. Rinominare il fine in ".env" e compilare i campi vuoti con le proprie credenziali per accedere al database</p>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
